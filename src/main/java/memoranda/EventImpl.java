@@ -75,10 +75,9 @@ public class EventImpl implements IEvent, Comparable {
     /**
      * @see main.java.memoranda.interfaces.IEvent#getStartDate()
      */
+    //Task 2-2 SMELL BETWEEN CLASSES -- Incomplete Class
     public CalendarDate getStartDate() {
-        Attribute a = _element.getAttribute("startDate");
-        if (a != null) return new CalendarDate(a.getValue());
-        return null;
+        return StartDate.getStartDate(_element);
     }
     /**
      * @see main.java.memoranda.interfaces.IEvent#getEndDate()

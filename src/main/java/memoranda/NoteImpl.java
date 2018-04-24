@@ -81,10 +81,9 @@ public class NoteImpl implements INote, Comparable {
 	/**
      * @see main.java.memoranda.interfaces.INote#setId(java.lang.String)
      */
-	 
+	 // Change complexity
 	public void setId(String s) {
-		Attribute id = _el.getAttribute("refid");
-		if(id==null) _el.addAttribute(new Attribute("refid", s));
+		_el.addAttribute(new Attribute("refid", s));
 	}
     /**
      * @see main.java.memoranda.interfaces.INote#isMarked()

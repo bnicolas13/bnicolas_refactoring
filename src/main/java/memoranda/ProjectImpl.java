@@ -39,10 +39,9 @@ public class ProjectImpl implements IProject {
     /**
      * @see main.java.memoranda.interfaces.IProject#getStartDate()
      */
+    //TASK 2-2 SMELL BETWEEN CLASSeS -- Incomplete Library
     public CalendarDate getStartDate() {
-        Attribute d = _root.getAttribute("startDate");
-        if (d == null) return null;
-        return new CalendarDate(d.getValue());        
+        return StartDate.getStartDate(_root);       
     }
 
     /**

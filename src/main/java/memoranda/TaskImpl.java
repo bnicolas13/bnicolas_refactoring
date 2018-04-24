@@ -44,9 +44,9 @@ public class TaskImpl implements ITask, Comparable {
     public Element getContent() {
         return _element;
     }
-
+    //TASK 2-2 SMELL BETWEEN CLASSES -- Incomplete Class
     public CalendarDate getStartDate() {
-        return new CalendarDate(_element.getAttribute("startDate").getValue());
+        return StartDate.getStartDate(_element);
     }
 
     public void setStartDate(CalendarDate date) {
